@@ -122,7 +122,11 @@ You are encouraged to make "less" part of your standard command line toolkit.
 Did you remember to save "introduction-to-tools-exercise.txt"?
 
 $ git status
-<type or copy-paste the result here>
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
 
 $ git add -A
 <type or copy-paste the result here>
