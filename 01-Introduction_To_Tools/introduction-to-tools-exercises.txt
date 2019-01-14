@@ -55,7 +55,7 @@ drwxr-xr-x  5 stevenmarkel  staff   170 Jan 14 16:25 java-helloworld
     Exercise 4 represent?
 ----
 
-<type your answer here>
+The . represents this current directory and the .. represents the parent directory to this one.
 
 ----
 6.  What are the names of the files, including any dot-files, displayed in the
