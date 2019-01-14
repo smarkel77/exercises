@@ -15,7 +15,7 @@ actual command from other text in Unix documentation.
     refer to?
 ----
 
-<type your response here>
+The ~ refers to the HOME directory for the current user in this shell, in this case /User/stevenmarkel
 
 ----
 3.  A good habit to develop, especially while you're developing your skills on
@@ -24,7 +24,8 @@ actual command from other text in Unix documentation.
 ----
 
 $ pwd
-<type or copy-paste the result here>
+/Users/stevenmarkel/workspace/exercises/01-Introduction_To_Tools/java-helloworld
+
 
 The present working directory displayed should match the directory you changed
 to in Exercise 1.  Note, the two may not match at the very beginning if you
