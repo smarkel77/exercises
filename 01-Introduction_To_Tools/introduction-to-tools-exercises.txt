@@ -336,9 +336,12 @@ Don't forget to save the file in Visual Studio Code!
 ----
 
 $ <enter the Git command to display status>
+git status
 
 $ <enter the Git command to "stage" all changes>
+git add introduction-to-tools-exercises.txt
 
 $ <enter the Git command to save all "staged" changes>
-
+git commit -m "Finished assignment"
 $ <enter the Git command to save local repository to BitBucket>
+git push origin master
