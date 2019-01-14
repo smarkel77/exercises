@@ -41,7 +41,13 @@ changes directory, and the "pwd" command reflects this.
 ----
 
 $ ls -la
-<type or copy-paste the result here>
+total 40
+drwxr-xr-x  6 stevenmarkel  staff   204 Jan 14 16:40 .
+drwxr-xr-x  6 stevenmarkel  staff   204 Jan 14 16:27 ..
+-rw-r--r--  1 stevenmarkel  staff   727 Jan 14 16:25 .gitignore
+-rw-r--r--  1 stevenmarkel  staff  3106 Jan 14 16:25 README.md
+-rwxr-xr-x@ 1 stevenmarkel  staff  8241 Jan 14 16:54 introduction-to-tools-exercises.txt
+drwxr-xr-x  5 stevenmarkel  staff   170 Jan 14 16:25 java-helloworld
 
 
 ----
