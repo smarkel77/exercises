@@ -170,7 +170,11 @@ absolute
 ----
 
 $ <enter command to list all files and directories including dot-files and dot-directories>
-<type or copy-paste the result here>
+total 8
+drwxr-xr-x  3 stevenmarkel  staff  102 Jan 14 16:25 .
+drwxr-xr-x  3 stevenmarkel  staff  102 Jan 14 16:25 ..
+-rwxr-xr-x  1 stevenmarkel  staff  141 Jan 14 16:25 Helloworld.java
+
 
 
 ----
@@ -185,7 +189,12 @@ The "cp" parameters are the name of the source file followed by the name of the
 destination file.
 
 $ <enter command to list all files and directories in order to confirm the creation of the backup file>
-<type or copy-paste the result here>
+total 16
+drwxr-xr-x  4 stevenmarkel  staff  136 Jan 14 17:26 .
+drwxr-xr-x  3 stevenmarkel  staff  102 Jan 14 16:25 ..
+-rwxr-xr-x  1 stevenmarkel  staff  141 Jan 14 16:25 Helloworld.java
+-rwxr-xr-x  1 stevenmarkel  staff  141 Jan 14 17:26 Helloworld.java.backup
+
 
 
 ----
