@@ -67,7 +67,10 @@ pom.xml
     the directory listing in Exercise 4?
 ----
 
-<type or copy-paste your answer here>
+drwxr-xr-x  5 stevenmarkel  staff   170 Jan 14 16:25 .
+drwxr-xr-x  6 stevenmarkel  staff   204 Jan 14 16:40 ..
+drwxr-xr-x  3 stevenmarkel  staff   102 Jan 14 16:25 database
+drwxr-xr-x  4 stevenmarkel  staff   136 Jan 14 16:25 src
 
 
 ----
@@ -99,7 +102,13 @@ $ less database/pagila.sql
 
 You are encouraged to make "less" part of your standard command line toolkit.
 
-<type or copy-paste the first five lines of either file here>
+
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+        <groupId>com.techelevator</groupId>
+        <artifactId>helloworld</artifactId>
 
 ----
 9.  This is good time to create a Git snapshot of your progress.  Usually,
