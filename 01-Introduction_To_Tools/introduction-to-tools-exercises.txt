@@ -129,10 +129,11 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 
 $ git add -A
-<type or copy-paste the result here>
+it just goes to the next prompt
 
 $ git commit -m "Good stopping point"
-<type or copy-paste the result here>
+[master 65ac3a3] Good stopping point
+ 1 file changed, 5 insertions(+), 1 deletion(-)
 
 Note, you do not need to push this commit up to BitBucket at this time. The
 typical Git workflow is to make many small commits to your local repo while
@@ -149,7 +150,10 @@ along, and then at the end.
 
 $ cd src/main/java/com/techelevator
 $ <enter command to display present working directory>
-<type or copy-paste your present working directory here>
+
+/Users/stevenmarkel/workspace/exercises/01-Introduction_To_Tools/java-helloworld/src/main/java/com/techelevator
+✔ ~/workspace/exercises/01-Introduction_To_Tools/java-helloworld/src/main/java/com/techelevator [master ↑·2|✚ 1] 
+
 
 
 ----
@@ -157,7 +161,7 @@ $ <enter command to display present working directory>
     path?
 ----
 
-<type your answer here>
+absolute
 
 
 ----
