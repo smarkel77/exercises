@@ -41,13 +41,11 @@ changes directory, and the "pwd" command reflects this.
 ----
 
 $ ls -la
-total 40
-drwxr-xr-x  6 stevenmarkel  staff   204 Jan 14 16:40 .
-drwxr-xr-x  6 stevenmarkel  staff   204 Jan 14 16:27 ..
--rw-r--r--  1 stevenmarkel  staff   727 Jan 14 16:25 .gitignore
--rw-r--r--  1 stevenmarkel  staff  3106 Jan 14 16:25 README.md
--rwxr-xr-x@ 1 stevenmarkel  staff  8241 Jan 14 16:54 introduction-to-tools-exercises.txt
-drwxr-xr-x  5 stevenmarkel  staff   170 Jan 14 16:25 java-helloworld
+drwxr-xr-x  5 stevenmarkel  staff   170 Jan 14 16:25 .
+drwxr-xr-x  6 stevenmarkel  staff   204 Jan 14 16:40 ..
+drwxr-xr-x  3 stevenmarkel  staff   102 Jan 14 16:25 database
+-rwxr-xr-x  1 stevenmarkel  staff  1091 Jan 14 16:25 pom.xml
+drwxr-xr-x  4 stevenmarkel  staff   136 Jan 14 16:25 src
 
 
 ----
@@ -62,8 +60,7 @@ The . represents this current directory and the .. represents the parent directo
     directory listing in Exercise 4?
 ----
 
-<type or copy-paste your answer here>
-
+pom.xml
 
 ----
 7.  What are the names of the directories, including any dot-directories, displayed in
