@@ -303,7 +303,8 @@ command line when that seems natural.
 Regardless of the option you chose, check your new location.
 
 $ <enter command to display present working directory>
-<type or copy-paste your present working directory here>
+17:36 $ pwd
+/Users/stevenmarkel/workspace/exercises/01-Introduction_To_Tools/java-helloworld
 
 
 ----
@@ -314,7 +315,10 @@ $ <enter command to display present working directory>
 $ mkdir docs
 $ <enter the command to change directory to "docs" using a relative path>
 $ <enter command to display present working directory>
-<type or copy-paste your present working directory here>
+17:37 $ cd docs/
+✔ ~/workspace/exercises/01-Introduction_To_Tools/java-helloworld/docs [master ↑·1|✚ 2] 
+17:37 $ pwd
+/Users/stevenmarkel/workspace/exercises/01-Introduction_To_Tools/java-helloworld/docs
 
 ----
 19. Create a new file name "readme.txt" using Visual Studio Code, and add the text
