@@ -208,7 +208,11 @@ The "mv" parameters are the existing name of the file followed by the new name
 of the file.
 
 $ <enter command to list all files and directories in order to confirm the renaming of the file>
-<type or copy-paste the result here>
+total 16
+drwxr-xr-x  4 stevenmarkel  staff  136 Jan 14 17:27 .
+drwxr-xr-x  3 stevenmarkel  staff  102 Jan 14 16:25 ..
+-rwxr-xr-x  1 stevenmarkel  staff  141 Jan 14 16:25 Helloworld.java
+-rwxr-xr-x  1 stevenmarkel  staff  141 Jan 14 17:26 Helloworld.java.copy
 
 
 ----
