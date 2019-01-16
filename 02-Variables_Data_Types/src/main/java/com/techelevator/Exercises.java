@@ -623,7 +623,7 @@ public class Exercises {
         
         String firstName = "Steven";
         String lastName = "Markel";
-        String middleInital = "R;";
+        String middleInital = "R.";
         String fullName = lastName + ", " + firstName + " " + middleInital;
         
         System.out.println(fullName);
