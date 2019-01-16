@@ -1,5 +1,7 @@
 package com.techelevator;
 
+import java.text.DecimalFormat;
+
 public class Exercises {
 
 	public static void main(String[] args) {
@@ -336,8 +338,9 @@ public class Exercises {
         float costOfCandy = .54f;
         float amountPaid = 1.0f;
         float changeDue = amountPaid - costOfCandy;
+        DecimalFormat numberFormat = new DecimalFormat("#.00");
         
-        System.out.println(changeDue);
+        System.out.println(numberFormat.format(changeDue) + " = change due");
 
         /*
         30. Mark has 13 trees in his backyard. If he plants 12 more, how many trees
@@ -381,7 +384,8 @@ public class Exercises {
         double costOfCandyBar = 1.00;
         double moneyLeftOver = moneyDanHas - costOfCandyBar;
         
-        System.out.println(moneyLeftOver + " = money left over");
+        
+        System.out.println(numberFormat.format(moneyLeftOver) + " = money left over");
 
         /*
         34. 5 boats are in the lake. Each boat has 3 people. How many people are
