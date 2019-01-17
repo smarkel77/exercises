@@ -166,12 +166,16 @@ public class Exercises {
 	 intMax(3, 2, 1) → 3
 	 */
 	public int intMax(int a, int b, int c) {
-		if (a >= b && a >= c) {
+		/*if (a >= b && a >= c) {
 			return a;
 		} else if (b >= a && b >= c) {
 			return b;
 		}
 		return c;
+	}
+	*/
+		int max =  Math.max(Math.max(a,b),c);
+		return max;
 	}
 
 	/*
@@ -182,14 +186,7 @@ public class Exercises {
 	 in3050(40, 50) → true
 	 */
 	public boolean in3050(int a, int b) {
-	/*	if ((a >= 30 && a <= 40) && (b >= 30 && b <= 40) ) {
-			return true;
-		} else if ((a >= 40 && a <= 50) && (b >= 40 && b <= 50)) {
-			return true;
-		}
-		return false;
-	}
-	*/
+
 		boolean aThirtyFourty = a >= 30 && a <= 40;
 		boolean bThirtyFourty = b >= 30 && b <= 40;
 		boolean aFourtyFifty = a >= 40 && a <= 50;
@@ -208,18 +205,15 @@ public class Exercises {
 		boolean aBetween = (a >= 10 && a <= 20);
 		boolean bBetween = (b >= 10 && b <= 20);
 		if (aBetween && bBetween) {
-			if (a > b) {
-				return a;
-			} 
-			return b;
-		}
-		else if (aBetween) {
+			return Math.max(a, b);
+		} else if (aBetween) {
 			return a;
 		} else if (bBetween) {
 			return b;
 		}
 		return 0;
 	}
+
 
 	/*
 	 16. When squirrels get together for a party, they like to have cigars. A squirrel party is successful
