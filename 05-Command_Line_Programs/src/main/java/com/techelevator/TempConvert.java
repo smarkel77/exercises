@@ -17,19 +17,21 @@ public class TempConvert {
 		
 		String fOrC = input.nextLine();
 		
-		double tempInt = Integer.parseInt(temp);
+		int tempInt = Integer.parseInt(temp);
 		
-		double answer;
+		int answer;
 		
 	
 		
 		if (fOrC.charAt(0) == 'F') {
-			answer = (tempInt - 32) / 1.8;
+			double unCastAnswer = (tempInt - 32) / 1.8;
+			answer = (int)unCastAnswer;
 			System.out.println(tempInt + fOrC + " is " + answer + "C");
 			
 		} 
 		if (fOrC.charAt(0) == 'C') {
-			answer = (tempInt * 1.8) + 32;
+			double unCastAnswer = (tempInt * 1.8) + 32;
+			answer = (int)unCastAnswer;
 			System.out.println(tempInt + fOrC + " is " + answer + "F");
 		}
 		
