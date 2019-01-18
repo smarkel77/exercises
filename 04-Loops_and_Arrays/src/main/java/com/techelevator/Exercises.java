@@ -66,13 +66,13 @@ public class Exercises {
 	 rotateLeft3([7, 0, 0]) → [0, 0, 7]
 	 */
 	public int[] rotateLeft3(int[] nums) {
+		
 		int [] newArray = new int [3];
 		for (int i = 0; i < nums.length; i++) {
 			if (i == 0) {
 				newArray[2] = nums[i];
 			} else {
-				int counter = i - 1;
-				newArray[counter] = nums[i];
+				newArray[i - 1] = nums[i];
 			}
 		}
 		return newArray;
@@ -103,13 +103,26 @@ public class Exercises {
 	 maxEnd3([2, 11, 3]) → [3, 3, 3]
 	 */
 	public int[] maxEnd3(int[] nums) {
-		int [] sameArray = new int [3];
+	/*	int [] sameArray = new int [3];
 		int max =  Math.max(nums[0],nums[2]);
 		for (int i = 0; i < nums.length; i++) {
 			sameArray[i] = max;
 		}
 		return sameArray;
 	}
+	*/
+		int [] sameArray = new int [3];
+		if (nums[0] > nums[2]) {
+			for (int i = 0; i < nums.length; i++) {
+			sameArray[i] = nums[0];
+			}
+		} else {
+			for (int i = 0; i < nums.length; i++) {
+				sameArray[i] = nums[2];
+			}
+		}
+		return sameArray;
+		}
 
 	/*
 	 9. Given an array of ints, return the sum of the first 2 elements in the array. If the array length
@@ -137,9 +150,19 @@ public class Exercises {
 	 middleWay([5, 2, 9], [1, 4, 5]) → [2, 4]
 	 */
 	public int[] middleWay(int[] a, int[] b) {
-		int [] middle = new int [2];
+	/*	int [] middle = new int [2];
 		middle[0] = a[1];
 		middle[1] = b[1];
+		return middle;
+	}
+	*/
+		int [] middle = new int [2];
+		for (int i = 0; i < a.length; i++) {
+			if (i == 1) {
+				middle[0] = a[i];
+				middle[1] = b[i];
+			}
+		}
 		return middle;
 	}
 
