@@ -36,7 +36,7 @@ public class DecimalToBinary {
 			int quotient = newArray[i];
 			String strremainder = "";
 			if (newArray[i] == 0) {
-				strremainder = "0;";
+				strremainder = "0";
 			}
 			while (quotient != 0) {
 				remainder = quotient % 2;
@@ -46,6 +46,7 @@ public class DecimalToBinary {
 			}
 			System.out.println(newArray[i] + " in binary is " + strremainder);
 		}
+		input.close();
 	}
 		
 }
