@@ -27,13 +27,25 @@ public class DecimalToBinary {
 		String decimalInput = input.nextLine();
 		String[] decimalAsString = decimalInput.split(" ");
 		int[] newArray = new int [decimalAsString.length];
-		
+	
 		for(int i = 0; i < decimalAsString.length; i++) {
 			newArray[i] = Integer.parseInt(decimalAsString[i]);
-			System.out.println(newArray[i] + " in binary is " + (int)(newArray[i]));
+		}
+		for (int i = 0; i < newArray.length; i++) {
+			int remainder;
+			int quotient = newArray[i];
+			String strremainder = "";
+			if (newArray[i] == 0) {
+				strremainder = "0;";
+			}
+			while (quotient != 0) {
+				remainder = quotient % 2;
+				quotient = quotient / 2;
+				String str = Integer.toString(remainder);
+				strremainder = str + strremainder;
+			}
+			System.out.println(newArray[i] + " in binary is " + strremainder);
+		}
+	}
 		
-
-	}
-	}
-
 }
