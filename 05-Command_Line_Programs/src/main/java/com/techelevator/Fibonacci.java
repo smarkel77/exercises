@@ -30,23 +30,26 @@ public class Fibonacci {
 		int a = 0;
 		int b = 1;
 		int c = 0;
-		System.out.print(a + ", " + b);
+		if (intFibEnd != 0) {
+			System.out.print(a + ", " + b);
 		
-		while (c <= intFibEnd) {
-			if (c == 0) {
-				c = a + b;
-				a = b;
-				b = c;
+		
+			while (c <= intFibEnd) {
+				if (c == 0) {
+					c = a + b;
+					a = b;
+					b = c;
+				} 
+				if (c != 0) {
+					System.out.print(", " + c);
+			
+					c = a + b;
+					a = b;
+					b = c;
+				}
 			}
-			
-			if (c != 0) {
-			System.out.print(", " + c);
-			
-			c = a + b;
-			a = b;
-			b = c;
-			
-		}
+		} else {
+			System.out.println("0");
 		}
 		
 		input.close();
