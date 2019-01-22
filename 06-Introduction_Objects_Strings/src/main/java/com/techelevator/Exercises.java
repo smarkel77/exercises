@@ -208,15 +208,11 @@ public class Exercises {
 	 * "ja" twoChar("java", 2) → "va" twoChar("java", 3) → "ja"
 	 */
 	public String twoChar(String str, int index) {
-		if (str.length() == 2) {
-			return str;
-		} else if (index >= str.length() - 1) {
+		if (index >= str.length() - 1 || index < 0) {
 			return str.substring(0, 2);
-		} else if (index == str.length() - 2) {
-			return str.substring(str.length() - 2);
-		} else {
-			return str.substring(index, index + 2);
 		}
+		return str.substring(index, index + 2);
+
 	}
 
 	/*
@@ -296,9 +292,10 @@ public class Exercises {
 	 */
 	public int countXX(String str) {
 		int counter = 0;
-		while (str.contains("xx")) {
-			counter++;
-			str = str.substring(str.indexOf('x') + 1);
+		for (int i = 0; i < str.length() - 1; i++) {
+			if (str.substring(i, i + 2).equals("xx")) {
+				counter++;
+			}
 		}
 		return counter;
 	}
@@ -309,15 +306,12 @@ public class Exercises {
 	 * doubleX("axaxax") → false doubleX("xxxxx") → true
 	 */
 	public boolean doubleX(String str) {
-		if (str.contains("x")) {
-			if (str.contains("xx")) {
-				String firstX = str.substring(str.indexOf('x'));
-				if (firstX.startsWith("xx")) {
-					return true;
-				}
-			}
-			} return false;
+		String firstX = "";
+		if (str.contains("xx")) {
+			firstX = str.substring(str.indexOf('x'));
 		}
+		return firstX.startsWith("xx");
+	}
 
 	/*
 	 * Given a string, return a new string made of every other char starting with
@@ -352,7 +346,18 @@ public class Exercises {
 	 * last2("xaxxaxaxx") → 1 last2("axxxaaxx") → 2
 	 */
 	public int last2(String str) {
-		return 0;
+		int counter = 0;
+		if (str.length() <= 2) {
+			return 0;
+		}
+		String lastTwo = str.substring(str.length() - 2);
+		String newString = str.substring(0, str.length() - 1);
+		for (int i = 0; i < newString.length() - 1; i++) {
+			if (newString.substring(i, i + 2).equals(lastTwo)) {
+				counter++;
+			}
+		}
+		return counter;
 	}
 
 	/*
@@ -361,7 +366,17 @@ public class Exercises {
 	 * "xHix" stringX("abxxxcd") → "abcd" stringX("xabxxxcdx") → "xabcdx"
 	 */
 	public String stringX(String str) {
-		return null;
+		String newWord = str.replace("x", "");
+		if (str.length() <= 2) {
+			return str;
+		}
+		if (str.startsWith("x")) {
+			newWord = "x" + newWord;
+		}
+		if (str.endsWith("x")) {
+			newWord = newWord + "x";
+		}
+		return newWord;
 	}
 
 	/*
@@ -370,7 +385,15 @@ public class Exercises {
 	 * altPairs("Chocolate") → "Chole" altPairs("CodingHorror") → "Congrr"
 	 */
 	public String altPairs(String str) {
-		return null;
+
+		String newString = "";
+		for (int i = 0; i < str.length() - 1; i = i + 4) {
+			newString = newString + str.charAt(i) + str.charAt(i + 1);
+		}
+		if (str.length() % 4 == 1) {
+			newString = newString + str.charAt(str.length() - 1);
+		}
+		return newString;
 	}
 
 	/*
@@ -380,7 +403,7 @@ public class Exercises {
 	 * stringYak("yak123ya") → "123ya"
 	 */
 	public String stringYak(String str) {
-		return null;
+		return str.replace("yak", "");
 	}
 
 }
