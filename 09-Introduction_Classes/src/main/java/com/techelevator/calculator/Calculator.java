@@ -17,12 +17,13 @@ public class Calculator {
 		return currentValue -= subtrahend;
 	}
 	public int power(int exponent) {
-		for (int i = 0; i <= exponent; i++) {
+		for (int i = 1; i < exponent; i++) {
 			currentValue = currentValue * currentValue;
 		}
 		
 		return currentValue;
 	}
+	
 	public void reset() {
 		currentValue = 0;
 	}

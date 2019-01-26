@@ -157,13 +157,13 @@ public class Exercises {
 	 * "ell" withoutEnd2("abc") → "b" withoutEnd2("ab") → ""
 	 */
 	public String withoutEnd2(String str) {
-		String newString = "";
+	
 
 		if (str.length() < 2) {
 			return "";
 		} else {
-			newString = str.substring(1, str.length() - 1);
-			return newString;
+			return str.substring(1, str.length() - 1);
+			
 		}
 	}
 
@@ -196,9 +196,8 @@ public class Exercises {
 	 * 2) → "Helo" nTwice("Chocolate", 3) → "Choate" nTwice("Chocolate", 1) → "Ce"
 	 */
 	public String nTwice(String str, int n) {
-		String front = str.substring(0, n);
-		String back = str.substring(str.length() - n);
-		return front + back;
+		return (str.substring(0, n)) + str.substring(str.length() - n);
+	
 	}
 
 	/*

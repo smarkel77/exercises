@@ -294,6 +294,7 @@ public class Exercises {
 		}
 		return returnList;
 	}
+	
 
 	/*
 	 * Given a list of Strings, return a list that contains the distinct values. In
