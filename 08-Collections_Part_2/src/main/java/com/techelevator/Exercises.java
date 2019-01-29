@@ -238,6 +238,7 @@ public class Exercises {
 	 */
 	public Map<String, Integer> consolidateInventory(Map<String, Integer> mainWarehouse,
 			Map<String, Integer> remoteWarehouse) {
+		
 		Map<String, Integer> combinedMaps = new HashMap<String, Integer>();
 		combinedMaps.putAll(mainWarehouse);
 		Set<String> warehouseSKUs = remoteWarehouse.keySet();
