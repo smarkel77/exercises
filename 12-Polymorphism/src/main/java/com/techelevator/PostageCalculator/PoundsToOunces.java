@@ -4,9 +4,11 @@ public class PoundsToOunces {
 	
 	private double pounds;
 	private double ounces;
-	private static double totalOunces;
+	
+	
 	
 	public static double getTotalOunces (double pounds, double ounces) {
+		double totalOunces;
 		pounds *= 16;
 		totalOunces = ounces + pounds;
 		return totalOunces;
