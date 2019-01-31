@@ -1,5 +1,6 @@
 package com.techelevator.TollBoothCalculator;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -7,6 +8,8 @@ import java.util.Random;
 public class TollCalcuator {
 
 	public static void main(String[] args) {
+		
+		DecimalFormat df2 = new DecimalFormat("#.00");
 		Vehicle car1 = new Car(true);
 		
 		
@@ -22,10 +25,10 @@ public class TollCalcuator {
 			int low = 10;
 			int high = 240;
 			int distance = r.nextInt(high-low) + low;
-			//int distance= (int) (Math.random() * 180) + 1;
+			
 			totalMiles =+ distance;
 			totalRevenue =+ vehicle.calculateToll(distance); 
-			System.out.println(vehicle.vehicleName() + "\t\t" + distance + "\t\t\t$" + vehicle.calculateToll(distance));
+			System.out.println(vehicle.vehicleName() + "\t\t" + distance + "\t\t\t$" + df2.format(vehicle.calculateToll(distance)));
 			System.out.println();
 			System.out.println("Total Miles Traveled: " + totalMiles);
 			System.out.println("Total Tollbooth Revenue: " + totalRevenue);

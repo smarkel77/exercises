@@ -2,21 +2,21 @@ package com.techelevator.PostageCalculator;
 
 public class PoundsToOunces {
 	
-	private Integer pounds;
-	private Integer ounces;
-	private Integer totalOunces;
+	private double pounds;
+	private double ounces;
+	private static double totalOunces;
 	
-	public Integer getTotalOunces (Integer pounds, Integer ounces) {
+	public static double getTotalOunces (double pounds, double ounces) {
 		pounds *= 16;
 		totalOunces = ounces + pounds;
 		return totalOunces;
 		
 	}
 	
-	public Integer getPounds() {
+	public double getPounds() {
 		return pounds;
 	}
-	public Integer getOunces() {
+	public double getOunces() {
 		return ounces;
 	}
 	

@@ -26,10 +26,10 @@ public class PostageCalculator extends PoundsToOunces {
 		String numberOfOunces = input.nextLine();
 
 		int ounces = Integer.parseInt(numberOfOunces);
+		
+		double totalWeight = getTotalOunces(pounds, ounces);
 
-		double weight = 0;
-		weight = pounds * 16 + ounces;
-		System.out.println(weight);
+		
 
 		System.out.println("What distance will it be traveling?");
 
@@ -42,7 +42,7 @@ public class PostageCalculator extends PoundsToOunces {
 
 		DeliveryDriver[] deliveryOptions = new DeliveryDriver[] { new FedEx(), new SPU4DayGround(), new SPU2DayBusiness(), new SPUNextDay(), new PostalServiceFirst(), new PostalServiceSecond(), new PostalServiceThird() };
 		for (DeliveryDriver option : deliveryOptions) {
-			System.out.println(option.typeOfService() + "\t\t\t$" + df2.format(option.calculateRate(distance, weight)));
+			System.out.println(option.typeOfService() + "\t\t\t$" + df2.format(option.calculateRate(distance, totalWeight)));
 			
 			
 		input.close();

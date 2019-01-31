@@ -1,19 +1,11 @@
 package com.techelevator.PostageCalculator;
 
-public class SPUNextDay implements DeliveryDriver{
+public class SPUNextDay extends SPU implements DeliveryDriver{
 	
-	@Override
-	public double calculateRate(int distance, double weight) {
-		double rate = 0;
-		rate = (weight * 0.075) * distance;
-		
-		return rate;
+	public SPUNextDay () {
+		super(0.075, "SPU Next Day");
 	}
-
-	@Override
-	public String typeOfService() {
-		// TODO Auto-generated method stub
-		return "SPU Next Day";
-	}
+	
+	
 
 }
