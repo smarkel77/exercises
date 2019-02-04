@@ -37,5 +37,12 @@ public class KataFizzBuzzTest {
 		
 	}
 	
+	@Test
+	public void number_13_returns_fizz() {
+		int input = 13;
+		String output = KataFizzBuzz.fizzBuzz(input);
+		Assert.assertEquals("Fizz", output);
+		
+	}
 
 }
