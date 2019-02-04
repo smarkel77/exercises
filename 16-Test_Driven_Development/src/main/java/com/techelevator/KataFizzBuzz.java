@@ -7,7 +7,9 @@ public class KataFizzBuzz {
 		String fizz = "Fizz";
 		String buzz = "Buzz";
 		output = Integer.toString(input);
-		
+		if (input % 3 == 0) {
+			return fizz;
+		}
 		
 		return output;
 	}
