@@ -14,7 +14,7 @@ public class KataFizzBuzz {
 		if (input % 3 == 0 || output.contains("3")) {
 			return fizz;
 		}
-		if (input % 5 == 0) {
+		if (input % 5 == 0 || output.contains("5")) {
 			return buzz;
 		}
 		

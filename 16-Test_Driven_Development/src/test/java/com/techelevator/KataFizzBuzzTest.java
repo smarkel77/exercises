@@ -46,8 +46,8 @@ public class KataFizzBuzzTest {
 	}
 	
 	@Test
-	public void number_51_returns_fizz() {
-		int input = 51;
+	public void number_52_returns_fizz() {
+		int input = 52;
 		String output = KataFizzBuzz.fizzBuzz(input);
 		Assert.assertEquals("Buzz", output);
 		
