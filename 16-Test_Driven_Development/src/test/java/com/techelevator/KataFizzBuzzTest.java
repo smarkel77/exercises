@@ -6,6 +6,31 @@ import org.junit.Assert;
 public class KataFizzBuzzTest {
 	
 	
+	
+	@Test
+	public void number_neg10_returns_empty() {
+		int input = -10;
+		String output = KataFizzBuzz.fizzBuzz(input);
+		Assert.assertEquals("", output);
+	}
+		
+	
+	@Test
+	public void number_101_returns_empty() {
+		int input = 101;
+		String output = KataFizzBuzz.fizzBuzz(input);
+		Assert.assertEquals("", output);
+	}
+	
+	
+	@Test
+	public void number_0_returns_empty() {
+		int input = 0;
+		String output = KataFizzBuzz.fizzBuzz(input);
+		Assert.assertEquals("", output);
+	}
+	
+	
 	@Test
 	public void number_1_returns_string1() {
 		int input = 1;
@@ -46,11 +71,19 @@ public class KataFizzBuzzTest {
 	}
 	
 	@Test
-	public void number_52_returns_fizz() {
+	public void number_52_returns_buzz() {
 		int input = 52;
 		String output = KataFizzBuzz.fizzBuzz(input);
 		Assert.assertEquals("Buzz", output);
 		
 	}
+	
+	@Test
+	public void number_53_returns_fizzbuzz() {
+		int input = 52;
+		String output = KataFizzBuzz.fizzBuzz(input);
+		Assert.assertEquals("Buzz", output);
+		
+	
 
 }
