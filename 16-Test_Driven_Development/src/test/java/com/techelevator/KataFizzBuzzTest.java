@@ -5,7 +5,12 @@ import org.junit.Assert;
 
 public class KataFizzBuzzTest {
 	
-	
+	@Test
+	public void number_22_returns_empty() {
+		int input = 22;
+		String output = KataFizzBuzz.fizzBuzz(input);
+		Assert.assertEquals("22", output);
+	}
 	
 	@Test
 	public void number_neg10_returns_empty() {
@@ -80,10 +85,10 @@ public class KataFizzBuzzTest {
 	
 	@Test
 	public void number_53_returns_fizzbuzz() {
-		int input = 52;
+		int input = 53;
 		String output = KataFizzBuzz.fizzBuzz(input);
-		Assert.assertEquals("Buzz", output);
+		Assert.assertEquals("FizzBuzz", output);
 		
-	
+	}
 
 }
