@@ -16,3 +16,7 @@ VALUES ('Chicken Launcher', '11/14/2013'), ('SBD-Noisemaker', '07/12/2016'), ('C
 INSERT INTO employees_projects (employee_id, project_id)
 VALUES (1, 1), (2, 2), (3, 3), (4, 4), (5, 1), (6, 2), (7, 3), (8, 4), (1, 4), (2, 3), (3, 2), (4, 1)
 ;
+
+INSERT INTO departments_projects (department_id, project_id)
+VALUES (1, 4), (2, 4), (3, 4), (4, 4), (4, 1), (3, 2), (2, 3), (1, 4)
+;
