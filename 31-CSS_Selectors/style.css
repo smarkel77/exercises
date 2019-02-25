@@ -12,6 +12,117 @@
   * {
     box-sizing: border-box;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
+
   }
+  main{
+    margin-left: 250px;
+  }
+  main img{
+    
+    margin: 25px;
+    max-width: 100%;
+    height: auto;
+  }
+  div p{
+    margin: 10px;
+    padding: 5px;
+  }
+  #logo{
+    margin: 10px;
+    padding: 5px;
+  }
+  h3{
+    margin: 10px;
+    padding: 5px;
+  }
+  div img{
+    vertical-align: top;
+    display: inline-block;
+    width: 50px;
+    height: auto;
+    margin: 10px;
+  }
+  #what-we-do{
+    display: inline-block;
+    border-right: solid 1px rgba(170, 239, 135, 0.8);
+    margin: 10px 15px;
+    padding: 5px;
+    width: 30%;
+  }
+  h2{
+    color: #8cc36f;
+  }
+  i{
+    margin: 5px;
+  }
+  #our-work{
+    border-right: solid 1px rgba(170, 239, 135, 0.8);
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 5px;
+    width: 30%;
+  }
+  #contact-us{
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 5px;
+    width: 30%;
+  }
+
+  aside {
+    position: fixed;
+    
+    display: block;
+    width: 200px;
+    border-right: 1px solid rgba(0, 173, 238, 0.4);
+    
+    padding: 10px;
+    margin: 10px;
+  }
+  aside img {
+    display: block;
+    height: 150px;
   
+    width: auto;
+    margin: 15px;
+    
+  }
+  aside ul{
+    display: block;
+    padding: 0;
+    
+  }
+  nav{
+    display: block;
+    margin: 20px 0;
+  }
+
+  aside li{
+    display: block;
+    padding: 10px 0px;
+    margin: 10px;
+    border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+    text-align: center;
+  }
+  header{
+    display: block;
+    height: 150px;
+  
+    top: 0px;
+    left: 200px;
+    margin: 10px;
+  }
+  header img{
+    height: 130px;
+    margin: 5px 15px;
+  }
+  header p{
+    margin: 5px 30px;
+  }
+  aside a{
+    color: #00ADEE;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+  }
   
