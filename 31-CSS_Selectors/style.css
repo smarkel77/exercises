@@ -11,9 +11,9 @@
   
   * {
     box-sizing: border-box;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
-
+    font-family: Tahoma, Verdana, Segoe, sans-serif:
   }
+
   main{
     margin-left: 250px;
   }
@@ -27,13 +27,21 @@
     margin: 10px;
     padding: 5px;
   }
-  #logo{
-    margin: 10px;
+  #logos{
+    margin: 5px 25px;
     padding: 5px;
   }
+  
   h3{
-    margin: 10px;
-    padding: 5px;
+    display: block;
+    margin: 0px 25px;
+    padding: 0px 5px;
+    width: 200px;
+  }
+  footer p{
+    display: block;
+    margin: 0px 25px;
+    padding: 0px 5px;
   }
   div img{
     vertical-align: top;

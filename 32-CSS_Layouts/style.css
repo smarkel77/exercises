@@ -10,5 +10,68 @@
 
 html {
     font-size: 16px;
+    color: #505355;
+    
 }
-
+body{
+    margin: 0px 8%;
+}
+header img{
+    width: 14.5em;
+}
+.headline{
+    font-size: 8.5em;
+    margin: 10px;
+    
+    
+}
+#student-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "AA AA BB"
+        "CC CC DD"
+        "EE EE EE";
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
+}
+#student-quote{
+    text-align: left;
+    line-height: 1.5em;
+    grid-area: AA;
+    font-size: 3em;
+}
+#student-picture{
+    margin: auto;
+    grid-area: BB;
+}
+#student-profile{
+    grid-area: CC;
+    
+}
+#student-contact{
+    text-align: center;
+    grid-area: DD;
+}
+#experience{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-area: EE;
+}
+#student-picture img{
+    border-radius: 50%;
+}
+#experience div{
+    width: 33%;
+}
+i{
+    margin: 0px 4px 0px 0px;
+}
+h3{
+    margin: 10px;
+    color: #00adee;
+}
+#experience p{
+    margin: 5px;
+}
