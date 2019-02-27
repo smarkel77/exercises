@@ -13,11 +13,16 @@
 	<body>
 		<h1>Exercise 2 - Fibonacci 25</h1>
 		<ul>
-			<%--
-				Add a list item (i.e. <li>) for each of the first 25 numbers in the Fibonacci sequence
-				
-				See exercise2-fibonacci.png for example output
-			 --%>
+			<c:set var = "n1" value = "0" />
+			<c:set var = "n2" value = "1" />
+			<li>${n1}</li>
+			<li>${n2}</li>
+			<c:forEach begin = "1" end = "24">
+				<c:set var = "n3" value = "${n1 + n2}" />
+				<li> ${n3} </li>
+				<c:set var = "n1" value = "${n2}" />
+				<c:set var = "n2" value = "${n3}" />
+			</c:forEach>
 		</ul>
 	</body>
 </html>
