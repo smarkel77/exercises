@@ -47,6 +47,18 @@ public class JDBCFilmDao implements FilmDao {
         filmRow.setRating(results.getString("rating"));
         return filmRow;
 	}
+	
+
+	@Override
+	public List<String> getAllCategories() {
+		List<String> listOfCategories = new ArrayList<String>();
+		String categorySql = "SELECT name FROM category;";
+		SqlRowSet results = jdbcTemplate.queryForRowSet(categorySql);
+		while(results.next()) {
+			listOfCategories.add(results.getString("name"));
+		}
+		return listOfCategories;
+	}
     
     
 
