@@ -24,7 +24,7 @@ public class HelloController {
 	ReviewDao reviewDao;
 
 	@RequestMapping("/greeting")
-	public String displayGreeting(HttpSession session, ModelMap modelHolder) {
+	public String displayGreeting(ModelMap modelHolder) {
 		modelHolder.put("allReviews", reviewDao.getAllReviews());
 		return "greeting";
 	}
@@ -44,7 +44,7 @@ public class HelloController {
 		review.setDateSubmitted(LocalDateTime.now());
 		reviewDao.save(review);
 		
-		return "redirect:/reviewSubmitted";
+		return "redirect:/greeting";
 	}
 	
 	@RequestMapping("/reviewSubmitted")
