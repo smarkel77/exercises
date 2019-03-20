@@ -178,3 +178,6 @@ function findLargest(arr) {
  *
  * Read the tests to verify you have the correct behavior.
  */
+function getSumOfSubArrayValues(arr){
+  
+}
