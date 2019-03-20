@@ -33,3 +33,7 @@
         return 0;
     }
 }
+
+function titleCase(title, minor){
+    
+}
