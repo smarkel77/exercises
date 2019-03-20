@@ -17,20 +17,27 @@ function setPageTitle() {
  * This function will loop over the array of groceries that was set above and add them to the DOM.
  */
 function displayGroceries() {
-  const list = document.getElementsByClassName('shopping-list');
-  
+  const list = document.getElementsByTagName("ul");
+
   groceries.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.innerHTML = item;
-    list.
+    list[0].appendChild(listItem);
   }
+
   );
+
 }
 /**
  * This function will be called wh4en the button is clicked. You will need to get a reference
  * to every list item and add the class completed to each one
  */
-function markCompleted() {}
+function markCompleted() {
+  const listItems = document.getElementsByTagName('li');
+  for(let i = 0; i < listItems.length; i++){
+    listItems[i].setAttribute('class', 'completed');
+  }
+}
 
 setPageTitle();
 
