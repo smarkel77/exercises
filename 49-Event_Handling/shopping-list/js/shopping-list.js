@@ -37,5 +37,66 @@ function displayGroceries() {
   });
 }
 
-setPageTitle();
-displayGroceries();
+
+document.addEventListener("DOMContentLoaded", function() {
+  setPageTitle();
+  displayGroceries();
+
+
+  let list = document.getElementsByTagName('li');
+
+  for (let i = 0; i < list.length; i++) {
+    list[i].addEventListener("click", (event) => {
+      list[i].setAttribute("class", "completed");
+    });
+  }
+
+  for (let i = 0; i < list.length; i++) {
+    list[i].addEventListener("dblclick", (event) => {
+      list[i].removeAttribute("class", "completed");
+    });
+  }
+
+  let markAllBtn = document.getElementById("toggleAll");
+  let allItemsIncomplete = true;
+  const listItems = document.getElementsByTagName('li');
+
+  markAllBtn.addEventListener("click", (event) => {
+    if (allItemsIncomplete) {
+      markCompleted();
+      markAllBtn.innerText= "Mark All Incomplete";
+      allItemsIncomplete = false;
+    } else {
+       markIncomplete();
+       markAllBtn.innerHTML = "Mark All Complete";
+       allItemsIncomplete = true;
+    }
+  });
+
+  function markIncomplete(){
+    for(let i = 0; i < listItems.length; i++){
+      listItems[i].removeAttribute('class', 'completed');
+    }
+  }
+  function markCompleted() {
+    for(let i = 0; i < listItems.length; i++){
+      listItems[i].setAttribute('class', 'completed');
+    }
+  }
+
+  // for (let i = 0; i < list.length; i++) {
+  //   list[i].addEventListener("click", (event) => {
+  //     list[i].classList.toggle("completed");
+  //   });
+  // }
+
+
+
+
+
+
+  
+
+
+
+});
