@@ -45,11 +45,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let list = document.getElementsByTagName('li');
 
-  for (let i = 0; i < list.length; i++) {
-    list[i].addEventListener("click", (event) => {
-      list[i].setAttribute("class", "completed");
-    });
-  }
+  // for (let i = 0; i < list.length; i++) {
+  //   list[i].addEventListener("click", (event) => {
+  //     list[i].setAttribute("class", "completed");
+  //   });
+  // }
+  list = Array.from(list);
+  list.forEach((item) => {
+      item.addEventListener("click", (event) =>{
+        item.setAttribute("class", "completed");
+      });
+  });
 
   for (let i = 0; i < list.length; i++) {
     list[i].addEventListener("dblclick", (event) => {
