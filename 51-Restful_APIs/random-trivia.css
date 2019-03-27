@@ -9,4 +9,10 @@
     margin-bottom: 5px;
 }
 
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+}
 /* Add additional styles for the trivia question layout */

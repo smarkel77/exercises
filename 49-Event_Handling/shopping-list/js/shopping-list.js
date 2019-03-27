@@ -43,14 +43,14 @@ document.addEventListener("DOMContentLoaded", function() {
   displayGroceries();
 
 
-  let list = document.getElementsByTagName('li');
+  let list = Array.from(document.getElementsByTagName('li'));
 
   // for (let i = 0; i < list.length; i++) {
   //   list[i].addEventListener("click", (event) => {
   //     list[i].setAttribute("class", "completed");
   //   });
   // }
-  list = Array.from(list);
+ 
   list.forEach((item) => {
       item.addEventListener("click", (event) =>{
         item.setAttribute("class", "completed");
